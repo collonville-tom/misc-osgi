@@ -1,28 +1,28 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.tc.module</groupId>
-  <artifactId>tc-misc-module</artifactId>
+  <artifactId>misc-module</artifactId>
   <name>${project.artifactId}-${project.version}</name>
   <packaging>pom</packaging>
-  <version>0.3.0</version>
+  <version>0.3.0-SNAPSHOT</version>
   <description>Projet parent misc</description>
   
   <parent>
     <groupId>org.tc.parent</groupId>
-    <artifactId>tc-parent</artifactId>
-    <version>0.8.0</version>
+    <artifactId>parent</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
   </parent>
 
   <modules>
-    <module>tc-osgi-bundle-groovy-interfaces</module>
-    <module>tc-osgi-bundle-groovy</module>
-    <module>tc-osgi-bundle-spark-interfaces</module>
-    <module>tc-osgi-bundle-spark</module>
+    <module>osgi-bundle-groovy-interfaces</module>
+    <module>osgi-bundle-groovy</module>
+    <module>osgi-bundle-spark-interfaces</module>
+    <module>osgi-bundle-spark</module>
 
-  	<module>tc-osgi-bundle-gui-utils</module>
-  	<module>tc-osgi-bundle-gui-utils-interfaces</module>
-    <module>tc-osgi-bundle-drools</module>
-    <module>tc-osgi-bundle-drools-interfaces</module>
+  	<module>osgi-bundle-gui-utils</module>
+  	<module>osgi-bundle-gui-utils-interfaces</module>
+    <module>osgi-bundle-drools</module>
+    <module>osgi-bundle-drools-interfaces</module>
   </modules>
   
  
