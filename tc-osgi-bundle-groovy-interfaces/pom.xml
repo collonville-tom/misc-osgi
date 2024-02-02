@@ -11,8 +11,8 @@
 		<build>0.10.0</build>
 		<utils.interfaces.version>0.10.0</utils.interfaces.version>
 		<manager.version>0.10.0</manager.version> <!-- use only for set docker.latest properties -->
-		<docker.latest>latest</docker.latest>
-		<snapshot>-SNAPSHOT</snapshot>
+		<docker.latest>0.10.0</docker.latest>
+		<snapshot></snapshot>
 	</properties>
 
 	<dependencies>
@@ -42,7 +42,7 @@
 	<parent>
 		<groupId>org.tc.parent</groupId>
 		<artifactId>tc-osgi-parent</artifactId>
-		<version>0.10.0-SNAPSHOT</version>
+		<version>0.10.0</version>
 	</parent>
 
 	<build>

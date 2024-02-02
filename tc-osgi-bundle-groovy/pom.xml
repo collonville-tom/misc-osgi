@@ -14,14 +14,14 @@
         <utils.interfaces.version>0.10.0</utils.interfaces.version>
         <groovy.interfaces.version>0.10.0</groovy.interfaces.version>
         <manager.version>0.10.0</manager.version>
-        <docker.latest>latest</docker.latest>
-        <snapshot>-SNAPSHOT</snapshot>
+        <docker.latest>0.10.0</docker.latest>
+        <snapshot></snapshot>
     </properties>
 
     <parent>
         <groupId>org.tc.parent</groupId>
         <artifactId>tc-osgi-parent</artifactId>
-        <version>0.10.0-SNAPSHOT</version>
+        <version>0.10.0</version>
     </parent>
 
 	<dependencies>
