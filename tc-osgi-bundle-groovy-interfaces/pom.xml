@@ -8,12 +8,11 @@
 	<version>${build}${snapshot}</version>
 
 	<properties>
-		<build>0.1.0</build>
-		<utils.interfaces.version>0.1.3</utils.interfaces.version>
-		<groovy.runtime.version>2.4.13</groovy.runtime.version>
-		<manager.version>0.1.1</manager.version> <!-- use only for set docker.latest properties -->
-		<docker.latest>0.1.1</docker.latest>
-		<snapshot></snapshot>
+		<build>0.10.0</build>
+		<utils.interfaces.version>0.10.0</utils.interfaces.version>
+		<manager.version>0.10.0</manager.version> <!-- use only for set docker.latest properties -->
+		<docker.latest>latest</docker.latest>
+		<snapshot>-SNAPSHOT</snapshot>
 	</properties>
 
 	<dependencies>
@@ -27,8 +26,8 @@
 		<dependency>
 			<groupId>org.codehaus.groovy</groupId>
 			<artifactId>groovy-all</artifactId>
-			<version>${groovy.runtime.version}</version>
-			<scope>runtime</scope>
+			<version>2.4.13</version>
+			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
@@ -43,7 +42,7 @@
 	<parent>
 		<groupId>org.tc.parent</groupId>
 		<artifactId>tc-osgi-parent</artifactId>
-		<version>0.8.1</version>
+		<version>0.10.0-SNAPSHOT</version>
 	</parent>
 
 	<build>
