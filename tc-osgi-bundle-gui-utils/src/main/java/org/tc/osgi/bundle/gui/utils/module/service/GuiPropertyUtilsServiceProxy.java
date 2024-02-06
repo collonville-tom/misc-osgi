@@ -1,6 +1,6 @@
 package org.tc.osgi.bundle.gui.utils.module.service;
 
-import org.tc.osgi.bundle.utils.interf.conf.IXmlProperty;
+import org.tc.osgi.bundle.utils.interf.conf.IYamlProperty;
 import org.tc.osgi.bundle.utils.interf.conf.exception.FieldTrackingAssignementException;
 import org.tc.osgi.bundle.utils.interf.module.service.IPropertyUtilsService;
 
@@ -22,8 +22,8 @@ public class GuiPropertyUtilsServiceProxy implements IPropertyUtilsService {
 	}
 
 	@Override
-	public IXmlProperty getXMLPropertyFile(final String propertyFileName) throws FieldTrackingAssignementException {
-		return service.getXMLPropertyFile(propertyFileName);
+	public IYamlProperty getYamlPropertyFile(final String propertyFileName) throws FieldTrackingAssignementException {
+		return service.getYamlPropertyFile(propertyFileName);
 	}
 
 	public void setService(final IPropertyUtilsService service) {

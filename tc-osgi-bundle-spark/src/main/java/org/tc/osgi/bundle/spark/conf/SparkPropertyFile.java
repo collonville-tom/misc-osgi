@@ -5,6 +5,7 @@ import org.tc.osgi.bundle.utils.interf.conf.exception.FieldTrackingAssignementEx
 
 /**
  * AptConfiguration.java.
+ * 
  * @author collonville thomas
  * @version 0.0.1
  */
@@ -24,9 +25,11 @@ public final class SparkPropertyFile extends AbstractPropertyFile {
 	 */
 	private static SparkPropertyFile instance = null;
 
-    private String workDirectory;
+	private String workDirectory;
+
 	/**
 	 * getInstance.
+	 * 
 	 * @return DefaultConfig
 	 * @throws EquinoxConfigException
 	 * @throws FieldTrackingAssignementException
@@ -38,15 +41,12 @@ public final class SparkPropertyFile extends AbstractPropertyFile {
 		return SparkPropertyFile.instance;
 	}
 
-
 	/**
 	 * AptConfiguration constructor.
 	 */
 	private SparkPropertyFile() {
 		super(SparkPropertyFile.SPARK_FILE, SparkPropertyFile.class.getClassLoader());
 	}
-
-	
 
 	/**
 	 * @return String
@@ -75,10 +75,15 @@ public final class SparkPropertyFile extends AbstractPropertyFile {
 		return SparkPropertyFile.getInstance().getConfigDirectory() + getConfFile();
 	}
 
-    public String getWorkDirectory() {
-        if (workDirectory == null) {
-        	workDirectory = getResourceBundle().getString(getBundleRacine() + "work_directory");
-        }
-        return workDirectory;
-    }
+	public String getWorkDirectory() {
+		if (workDirectory == null) {
+			workDirectory = getResourceBundle().getString(getBundleRacine() + "work_directory");
+		}
+		return workDirectory;
+	}
+
+	@Override
+	public String getYamlFile() {
+		return SparkPropertyFile.getInstance().getConfigDirectory() + getConfFile();
+	}
 }

@@ -39,6 +39,7 @@
 			<filtered>true</filtered>
 			<includes>
 				<include>groovy.xml</include>
+				<include>groovy.yaml</include>
 			</includes>
 		</fileSet>
 		<fileSet>

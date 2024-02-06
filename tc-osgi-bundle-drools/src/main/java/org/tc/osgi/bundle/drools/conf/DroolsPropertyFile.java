@@ -5,6 +5,7 @@ import org.tc.osgi.bundle.utils.interf.conf.exception.FieldTrackingAssignementEx
 
 /**
  * AptConfiguration.java.
+ * 
  * @author collonville thomas
  * @version 0.0.1
  */
@@ -26,6 +27,7 @@ public final class DroolsPropertyFile extends AbstractPropertyFile {
 
 	/**
 	 * getInstance.
+	 * 
 	 * @return DefaultConfig
 	 * @throws EquinoxConfigException
 	 * @throws FieldTrackingAssignementException
@@ -37,15 +39,12 @@ public final class DroolsPropertyFile extends AbstractPropertyFile {
 		return DroolsPropertyFile.instance;
 	}
 
-
 	/**
 	 * AptConfiguration constructor.
 	 */
 	private DroolsPropertyFile() {
 		super(DroolsPropertyFile.DROOLS_FILE, DroolsPropertyFile.class.getClassLoader());
 	}
-
-	
 
 	/**
 	 * @return String
@@ -71,6 +70,12 @@ public final class DroolsPropertyFile extends AbstractPropertyFile {
 	 */
 	@Override
 	public String getXMLFile() {
+		return DroolsPropertyFile.getInstance().getConfigDirectory() + getConfFile();
+	}
+
+	@Override
+	public String getYamlFile() {
+		// TODO Auto-generated method stub
 		return DroolsPropertyFile.getInstance().getConfigDirectory() + getConfFile();
 	}
 

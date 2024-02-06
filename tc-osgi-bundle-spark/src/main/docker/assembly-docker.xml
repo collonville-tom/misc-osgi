@@ -39,6 +39,7 @@
 			<filtered>true</filtered>
 			<includes>
 				<include>spark.xml</include>
+				<include>spark.yaml</include>
 			</includes>
 		</fileSet>
 		<fileSet>

@@ -5,6 +5,7 @@ import org.tc.osgi.bundle.utils.interf.conf.exception.FieldTrackingAssignementEx
 
 /**
  * AptConfiguration.java.
+ * 
  * @author collonville thomas
  * @version 0.0.1
  */
@@ -21,21 +22,21 @@ public final class GroovyPropertyFile extends AbstractPropertyFile {
 
 	public String groovy_extensions_libs;
 	public String groovy_extensions_scripts;
-	
-    public String getGroovyExtLibs() {
-        if (groovy_extensions_libs == null) {
-        	groovy_extensions_libs = getResourceBundle().getString(getBundleRacine() + "groovy_extensions_libs");
-        }
-        return groovy_extensions_libs;
-    }
-    
-    public String getGroovyExtScripts() {
-        if (groovy_extensions_scripts == null) {
-        	groovy_extensions_scripts = getResourceBundle().getString(getBundleRacine() + "groovy_extensions_scripts");
-        }
-        return groovy_extensions_scripts;
-    }
-	
+
+	public String getGroovyExtLibs() {
+		if (groovy_extensions_libs == null) {
+			groovy_extensions_libs = getResourceBundle().getString(getBundleRacine() + "groovy_extensions_libs");
+		}
+		return groovy_extensions_libs;
+	}
+
+	public String getGroovyExtScripts() {
+		if (groovy_extensions_scripts == null) {
+			groovy_extensions_scripts = getResourceBundle().getString(getBundleRacine() + "groovy_extensions_scripts");
+		}
+		return groovy_extensions_scripts;
+	}
+
 	/**
 	 * DefaultConfig conf.
 	 */
@@ -43,6 +44,7 @@ public final class GroovyPropertyFile extends AbstractPropertyFile {
 
 	/**
 	 * getInstance.
+	 * 
 	 * @return DefaultConfig
 	 * @throws EquinoxConfigException
 	 * @throws FieldTrackingAssignementException
@@ -54,15 +56,12 @@ public final class GroovyPropertyFile extends AbstractPropertyFile {
 		return GroovyPropertyFile.instance;
 	}
 
-
 	/**
 	 * AptConfiguration constructor.
 	 */
 	private GroovyPropertyFile() {
 		super(GroovyPropertyFile.GROOVY_FILE, GroovyPropertyFile.class.getClassLoader());
 	}
-
-	
 
 	/**
 	 * @return String
@@ -86,6 +85,11 @@ public final class GroovyPropertyFile extends AbstractPropertyFile {
 	 * @return String
 	 * @see org.tc.osgi.bundle.utils.conf.AbstractPropertyFile#getXMLFile()
 	 */
+	@Override
+	public String getYamlFile() {
+		return GroovyPropertyFile.getInstance().getConfigDirectory() + getConfFile();
+	}
+
 	@Override
 	public String getXMLFile() {
 		return GroovyPropertyFile.getInstance().getConfigDirectory() + getConfFile();
