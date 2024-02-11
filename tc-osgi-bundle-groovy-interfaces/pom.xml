@@ -53,13 +53,6 @@
 				<configuration>
 					<archive>
 						<manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
-						<manifest>
-							<addClasspath>true</addClasspath>
-							<classpathPrefix>./</classpathPrefix>
-						</manifest>
-						<manifestEntries>
-							<Class-Path>./ ./${project.artifactId}-${project.version}/</Class-Path>
-						</manifestEntries>
 					</archive>
 				</configuration>
 			</plugin>
