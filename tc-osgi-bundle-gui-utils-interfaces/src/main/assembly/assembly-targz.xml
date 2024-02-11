@@ -21,17 +21,7 @@
 	</dependencySets>
 		
 	
-	<fileSets>
-		<fileSet>
-			<directory>src/main/resources</directory>
-			<outputDirectory>/opt/equinox-loader/bundles/${project.artifactId}-${project.version}</outputDirectory>
-			<useDefaultExcludes>true</useDefaultExcludes>
-			<filtered>true</filtered>
-			<includes>
-				<include>gui-utils.xml</include>
-			</includes>
-		</fileSet>
-	</fileSets>
+
 </assembly>
 
 

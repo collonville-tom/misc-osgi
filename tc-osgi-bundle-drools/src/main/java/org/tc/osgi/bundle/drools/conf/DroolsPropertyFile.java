@@ -64,15 +64,6 @@ public final class DroolsPropertyFile extends AbstractPropertyFile {
 		return DroolsPropertyFile.DROOLS_FILE;
 	}
 
-	/**
-	 * @return String
-	 * @see org.tc.osgi.bundle.utils.conf.AbstractPropertyFile#getXMLFile()
-	 */
-	@Override
-	public String getXMLFile() {
-		return DroolsPropertyFile.getInstance().getConfigDirectory() + getConfFile();
-	}
-
 	@Override
 	public String getYamlFile() {
 		// TODO Auto-generated method stub

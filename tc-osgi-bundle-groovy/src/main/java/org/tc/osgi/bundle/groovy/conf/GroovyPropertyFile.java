@@ -90,9 +90,4 @@ public final class GroovyPropertyFile extends AbstractPropertyFile {
 		return GroovyPropertyFile.getInstance().getConfigDirectory() + getConfFile();
 	}
 
-	@Override
-	public String getXMLFile() {
-		return GroovyPropertyFile.getInstance().getConfigDirectory() + getConfFile();
-	}
-
 }

@@ -66,15 +66,6 @@ public final class SparkPropertyFile extends AbstractPropertyFile {
 		return SparkPropertyFile.SPARK_FILE;
 	}
 
-	/**
-	 * @return String
-	 * @see org.tc.osgi.bundle.utils.conf.AbstractPropertyFile#getXMLFile()
-	 */
-	@Override
-	public String getXMLFile() {
-		return SparkPropertyFile.getInstance().getConfigDirectory() + getConfFile();
-	}
-
 	public String getWorkDirectory() {
 		if (workDirectory == null) {
 			workDirectory = getResourceBundle().getString(getBundleRacine() + "work_directory");

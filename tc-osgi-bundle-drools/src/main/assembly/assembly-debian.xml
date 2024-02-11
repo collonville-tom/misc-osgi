@@ -38,7 +38,6 @@
 			<useDefaultExcludes>true</useDefaultExcludes>
 			<filtered>true</filtered>
 			<includes>
-				<include>drools.xml</include>
 				<include>drools.yaml</include>
 			</includes>
 		</fileSet>

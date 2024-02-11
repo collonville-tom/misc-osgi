@@ -83,15 +83,6 @@ public final class GuiUtilsPropertyFile extends AbstractPropertyFile {
 		return listOfExcludeDir;
 	}
 
-	/**
-	 * @return String
-	 * @see org.tc.osgi.bundle.utils.conf.AbstractPropertyFile#getXMLFile()
-	 */
-	@Override
-	public String getXMLFile() {
-		return GuiUtilsPropertyFile.getInstance().getConfigDirectory() + getConfFile();
-	}
-
 	@Override
 	public String getYamlFile() {
 		// TODO Auto-generated method stub
