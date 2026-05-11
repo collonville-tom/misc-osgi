@@ -14,10 +14,7 @@
   </parent>
 
   <modules>
-    <module>tc-osgi-bundle-groovy-interfaces</module>
-    <module>tc-osgi-bundle-groovy</module>
-    <module>tc-osgi-bundle-spark-interfaces</module>
-    <module>tc-osgi-bundle-spark</module>
+
 
   	<module>tc-osgi-bundle-gui-utils</module>
   	<module>tc-osgi-bundle-gui-utils-interfaces</module>
